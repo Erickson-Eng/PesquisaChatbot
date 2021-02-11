@@ -2,90 +2,99 @@
 #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
 
 stories:
-- story: happy path 1
+- story: caminho feliz 1
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      Bom dia
+    intent: saudacao
+  - action: utter_saudacao
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      pode me ajudar?
+    intent: instrucoes
+  - action: utter_instrucoes
+  - user: |
+      quero saber sobre chamados
+    intent: chamado
+  - action: utter_chamado
 
-- story: happy path 2
+- story: caminho feliz 2
   steps:
   - user: |
-      hello there!
-    intent: greet
-  - action: utter_greet
+      Bom dia
+    intent: saudacao
+  - action: utter_saudacao
   - user: |
-      amazing
-    intent: mood_great
-  - action: utter_happy
+      pode me ajudar?
+    intent: instrucoes
+  - action: utter_instrucoes
   - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+      quero saber dos procedimentos
+    intent: procedimento
+  - action: utter_procedimento
 
-- story: sad path 1
+- story: caminho infeliz 1
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
+      Bom dia
+    intent: saudacao
+  - action: utter_saudacao
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      não quero nada disso
+    intent: nao_capturado
+  - action: utter_naocapturado
+  - action: utter_instrucoes
   - user: |
-      yes
-    intent: affirm
-  - action: utter_happy
+      certo, me fala sobre os chamados
+    intent: chamado
+  - action: utter_chamado
 
-- story: sad path 2
+- story: caminho infeliz 2
   steps:
   - user: |
-      hello
-    intent: greet
-  - action: utter_greet
+      Boa tarde
+    intent: saudacao
+  - action: utter_saudacao
   - user: |
-      not good
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      não tenho interesse nisso
+    intent: nao_capturado
+  - action: utter_naocapturado
+  - action: utter_instrucoes
   - user: |
-      not really
-    intent: deny
-  - action: utter_goodbye
+      Entendo, me lista os procedimentos então
+    intent: procedimento
+  - action: utter_procedimento
 
-- story: sad path 3
+- story: caminho infeliz 3
   steps:
   - user: |
-      hi
-    intent: greet
-  - action: utter_greet
+      Boa noite
+    intent: saudacao
+  - action: utter_saudacao
   - user: |
-      very terrible
-    intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
+      não me diga
+    intent: nao_capturado
+  - action: utter_naocapturado
+  - action: utter_instrucoes
   - user: |
-      no
-    intent: deny
-  - action: utter_goodbye
+      você por acaso sabe listar os chamados?
+    intent: lista_chamados
+  - action: utter_lista_chamados
 
-- story: say goodbye
+- story: finalização
   steps:
   - user: |
-      bye-bye!
-    intent: goodbye
-  - action: utter_goodbye
+      até mais
+    intent: adeus
+  - action: utter_adeus
 
 - story: bot challenge
   steps:
   - user: |
-      are you a bot?
-    intent: bot_challenge
+      o que você é?
+    intent: robo
   - action: utter_iamabot
+  - action: utter_continuando
+  - user: |
+      Não, até mais
+    intent: adeus
+  - action: utter_adeus

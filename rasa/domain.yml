@@ -1,34 +1,143 @@
-version: "2.0"
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+version: '2.0'
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- saudacao:
+    use_entities: true
+- instrucoes:
+    use_entities: true
+- chamado:
+    use_entities: true
+- procedimento:
+    use_entities: true
+- lista_chamados:
+    use_entities: true
+- negacao:
+    use_entities: true
+- positivo:
+    use_entities: true
+- robo:
+    use_entities: true
+- nao_capturado:
+    use_entities: true
+- adeus:
+    use_entities: true
+- lista_procedimentos:
+    use_entities: true
+- cadastro:
+    use_entities: true
+- local_cobrança:
+    use_entities: true
+- mudança_titularidade:
+    use_entities: true
+- desconhece_assinatura:
+    use_entities: true
+- cancelamento:
+    use_entities: true
+- cancelamento_telefone:
+    use_entities: true
+- cancelamento_internet:
+    use_entities: true
+- cancelamento_celular:
+    use_entities: true
+- erros_sistemicos:
+    use_entities: true
+- erro_cadastro:
+    use_entities: true
+- erro_velocidade:
+    use_entities: true
+- erro_mud_pacote:
+    use_entities: true
+- pacote_indisponivel:
+    use_entities: true
+- MUDANÇA_DE_LOCAL_PARA_COBRANÇA:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_saudacao:
+  - text: |-
+      Olá, o que posso fazer por você?
+      Em caso de duvidas, escreva instruções.
+  - text: |-
+      Oi, no que posso te ajudar?
+      Em caso de duvidas, escreva instruções.
+  - text: |-
+      E ai, como posso lhe ajudar?
+      Em caso de duvidas, escreva instruções.
+  utter_instrucoes:
+  - text: Posso está lhe ajudando a fazer procedimentos ou abrir chamados basta você pedir qual deseja fazer.
+  - text: Você pode me perguntar sobre chamados ou procedimentos.
+  - text: Você deseja abrir um chamado ou quer que eu ensine sobre algum procedimentos?
+  utter_chamado:
+  - text: Tenho acesso a varios chamados qual o problema que quer resolver?
+  - text: Eu sei todos os chamados, o que você quer resolver?
+  - text: Eu sei todos os chamados, se tiver duvida posso te dar uma lista basta pedir por listar chamados
+  utter_procedimento:
+  - text: |-
+      Eu sei fazer varios procedimentos, qual problema você quer resolver?
+      Se não sabe ao certo, peça a lista de procedimentos.
+  - text: |-
+      Sei fazer varios procedimentos, qual vocẽ tem duvida?
+      Se não sabe ao certo, peça a lista de procedimentos.
+  - text: |-
+      Sei sobre todos os procedimentos, qual tem duvida? 
+      Se não sabe ao certo, peça a lista de procedimentos.
+  utter_lista_chamados:
+  - text: Eu tenho os seguintes chamados disponiveis Cadastro, Cancelamento, Erros sistemicos
+  utter_lista_procedimentos:
+  - text: Posso lhe ensinar a fazer esses procedimentos a seguir
+  utter_naocapturado:
+  - text: Não consegui entender o que quis dizer poderia repetir de outra forma?
+  - text: Desculpa, não consegui entender poderia repetir de outra forma?
+  utter_adeus:
+  - text: Obrigado por conversa comigo, espero ter ajudado e até mais
+  - text: Sempre que precisar pode contar comigo, até logo
+  utter_robo:
+  - text: Sou um robô inteligente que aprende contigo também e vai te ajudar a ir além
+  - text: Sou um robô que aprende e ensina feito para ajudar você
+  - text: Sou um bot e após muito aprendizado estou repassando para você
+  utter_continuando:
+  - text: Você tem alguma duvida que posso ajudar?
+  utter_finalização:
+  - text: Agradeço pela confiança, até mais
+  - text: Obrigado por confiar em mim, qualquer coisa pode me chamar
+  utter_cadastro:
+  - text: |-
+      Informe qual procedimento o cliente deseja em cadastro sendo mudança de local de cobrança,
+      mudança de titularidade ou desconhecimento de assinatura.
+  - text: Escolha um dos chamado mudança de titularidade, mudança de local de cobrança ou desconhece assinatura.
+  utter_local_cobrança:
+  - text: Se o cliente quer receber a fatura em outro endereço abrar o chamado CA1 - MC1
+  utter_mudança_titularidade:
+  - text: Se o cliente quer trocar a titularidade abra o chamado CA1 - MT1
+  utter_desconhece_assinatura:
+  - text: Se o cliente informa que desconhece a assinatura abra CA1 - MT2
+  utter_cancelamento:
+  - text: Informe o que o cliente deseja cancelamento que vou te ajudar Telefone fixo, Celular ou Internet?
+  utter_cancelamento_telefone:
+  - text: Para cancelamento do telefone fixo você deve abrir o chamado CO7 - TF1
+  utter_cancelamento_celular:
+  - text: Para cancelamento do telefone celular você deve abrir o chamado CO7 - TM1
+  utter_cancelamento_internet:
+  - text: Para cancelamento da internet você deve abrir o chamado CO7 - TI1
+  utter_erros_sistemicos:
+  - text: |-
+      Os chamados de erros sistemicos são dividos em Erro no cadastro, Erro de velocidade,
+      Erro em mudança de pacote e pacotes indisponiveis informe qual deseja abrir.
+  utter_erro_cadastro:
+  - text: Cliente informa que há informações erradas em seu cadastro e não é possivel alterar nesse caso abra ER5 - CA1
+  utter_erro_velocidade:
+  - text: o cliente informa problemas na internet e é identificado que não está liberada abra o chamado ER5 - IN1
+  utter_erro_mud_pacote:
+  - text: Você tentou mudar o pacote mas isso gerou um erro nesse caso abra ER5 - MP1
+  utter_pacote_indisponivel:
+  - text: |-
+      Cliente solicita retorno para seu pacote antigo após trocar o mesmo, porém, ele não está disponivel
+      nesse caso abra o chamado ER5 - MP2
+actions: []
+forms: {}
+e2e_actions: []

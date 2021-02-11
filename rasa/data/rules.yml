@@ -2,12 +2,39 @@ version: "2.0"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: usar saudacao para saudacao
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+    - intent: saudacao
+    - action: utter_saudacao
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: solicitacao de lista 1
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+    - intent: lista_procedimentos
+    - action: utter_lista_procedimentos
+
+- rule: solicitacao de lista 2
+  steps:
+    - intent: lista_chamados
+    - action: utter_lista_chamados
+
+- rule: duvidas
+  steps:
+    - intent: instrucoes
+    - action: utter_instrucoes
+- rule: cadastro
+  steps:
+    - intent: cadastro
+    - action: utter_cadastro
+- rule: cancelamento CO7
+  steps:
+    - intent: cancelamento
+    - action: utter_cancelamento
+- rule: problemas no sistema ER5
+  steps:
+    - intent: erros_sistemicos
+    - action: utter_erros_sistemicos
+
+- rule: cancelamento fixo
+  steps:
+    - intent: cancelamento_telefone
+    - action: utter_cancelamento_telefone

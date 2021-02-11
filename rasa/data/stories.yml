@@ -1,30 +1,278 @@
 version: "2.0"
-
 stories:
-
-- story: happy path
+- story: duvida do que fazer
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
-
-- story: sad path 1
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: instrucoes
+  - action: utter_instrucoes
+  - intent: robo
+  - action: utter_robo
+  - action: utter_continuando
+  - action: utter_instrucoes
+  - intent: negacao
+  - action: utter_finalização
+- story: conciente
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: instrucoes
+  - action: utter_instrucoes
+  - intent: chamado
+  - action: utter_chamado
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+- story: conciente 2
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: instrucoes
+  - action: utter_instrucoes
+  - intent: procedimento
+  - action: utter_procedimento
+  - intent: lista_procedimentos
+  - action: utter_lista_procedimentos
+- story: problemas na conversa
+  steps:
+  - intent: negacao
+  - action: utter_naocapturado
+  - intent: negacao
+  - action: utter_naocapturado
+  - action: utter_instrucoes
+- story: conversa incomum
+  steps:
+  - intent: robo
+  - action: utter_robo
+  - action: utter_continuando
+  - intent: chamado
+  - action: utter_chamado
+- story: Story from Conversation ID 4f78bbb1459b46fb876de319fd5240cc
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: chamado
+  - action: action_default_fallback
+  - action: utter_chamado
+- story: Story from Conversation ID f2c8139644e249b795822d6d2360091e
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: instrucoes
+  - action: utter_instrucoes
+  - intent: chamado
+  - action: utter_chamado
+- story: passos ate cadastro
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cadastro
+  - action: utter_cadastro
+- story: passos ate local de cobranca
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cadastro
+  - action: utter_cadastro
+  - intent: local_cobrança
+  - action: utter_local_cobrança
+- story: passos ate troca de titularidade
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cadastro
+  - action: utter_cadastro
+  - intent: mudança_titularidade
+  - action: utter_mudança_titularidade
+- story: passos problema na assinatura
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cadastro
+  - action: utter_cadastro
+  - intent: desconhece_assinatura
+  - action: utter_desconhece_assinatura
+- story: passos até cancelamento
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cancelamento
+  - action: utter_cancelamento
+- story: passos até cancelamento fixo
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cancelamento
+  - action: utter_cancelamento
+  - intent: cancelamento_telefone
+  - action: utter_cancelamento_telefone
+- story: passos até cancelamento celular
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cancelamento
+  - action: utter_cancelamento
+  - intent: cancelamento_celular
+  - action: utter_cancelamento_celular
+- story: passos até cancelamento internet
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cancelamento
+  - action: utter_cancelamento
+  - intent: cancelamento_internet
+  - action: utter_cancelamento_internet
+- story: passos até achar chamados de erro
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: erros_sistemicos
+  - action: utter_erros_sistemicos
+- story: passos até achar chamados de erro cadastro
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: erro_cadastro
+  - action: utter_erros_sistemicos
+  - intent: erro_cadastro
+  - action: utter_erro_cadastro
+- story: passos até achar chamados de erro internet
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: erro_cadastro
+  - action: utter_erros_sistemicos
+  - intent: erro_velocidade
+  - action: utter_erro_velocidade
+- story: passos até achar chamados de erro mudança pacote
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: erro_cadastro
+  - action: utter_erros_sistemicos
+  - intent: erro_mud_pacote
+  - action: utter_erro_mud_pacote
+- story: passos até achar chamados de erro pacote indisponivel
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: erro_cadastro
+  - action: utter_erros_sistemicos
+  - intent: pacote_indisponivel
+  - action: utter_pacote_indisponivel
+- story: Story from Conversation ID 31dad45a90a847f7b0f0a101e2483b3d
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: instrucoes
+  - action: utter_instrucoes
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+- story: Story from Conversation ID 10057e09e39a4297829db5ae78a5f317
+  steps:
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cancelamento_celular
+  - action: utter_cancelamento_celular
+  - action: utter_adeus
+- story: Story from Conversation ID 49eabc9a1b5a45d698bc16e308faa115
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: chamado
+  - action: utter_chamado
+- story: Story from Conversation ID b25e2db56d1b4456813b29e7ea6c6a2d
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: chamado
+  - action: utter_chamado
+- story: Story from Conversation ID cd76663f8c1e4e50a99b999baae4791c
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+- story: Story from Conversation ID 2f3be70cf8fe4af09ef13178f779993c
+  steps:
+  - intent: cancelamento_celular
+  - action: utter_cancelamento_celular
+- story: Story from Conversation ID eaa1ff47c16242939f6a698c062edf30
+  steps:
+  - intent: cancelamento_internet
+  - action: utter_cancelamento_internet
+- story: Story from Conversation ID e138a56f87e9404e88cad54f7fbd0337
+  steps:
+  - intent: cancelamento_telefone
+  - action: utter_cancelamento_telefone
+- story: Story from Conversation ID cfad069884fa450681140b0e8093210e
+  steps:
+  - intent: erro_velocidade
+  - action: utter_erro_velocidade
+- story: Story from Conversation ID a51017f0e4454784a447587a67d367df
+  steps:
+  - intent: erro_velocidade
+  - action: utter_erro_velocidade
+- story: Story from Conversation ID 02c5dd40307d40ce88854e55f717c083
+  steps:
+  - intent: local_cobrança
+  - action: utter_local_cobrança
+- story: Story from Conversation ID 92f8259f357049d4ad9f86b698107ccc
+  steps:
+  - intent: local_cobrança
+  - action: utter_local_cobrança
+- story: Story from Conversation ID 07d2821d7d274a12ba5cad00b2ee8413
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: instrucoes
+  - action: utter_instrucoes
+  - intent: chamado
+  - action: utter_chamado
+- story: Story from Conversation ID 415f541be2c846b0b148f51d0a794737
+  steps:
+  - intent: cancelamento
+  - action: utter_cancelamento
+- story: Story from Conversation ID 5e1719231dcc4e358a76373c4e211484
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: instrucoes
+  - action: utter_instrucoes
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+- story: Story from Conversation ID 63b761767df24bae980a4ffe1b824288
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: instrucoes
+  - action: utter_instrucoes
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cancelamento
+  - action: utter_cancelamento
+  - intent: cancelamento_telefone
+  - action: utter_cancelamento_telefone
+- story: Story from Conversation ID 0ce12df8a02646d9b2a8e5995e24f01b
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: instrucoes
+  - action: utter_instrucoes
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cancelamento
+  - action: utter_cancelamento
+  - intent: cancelamento_telefone
+  - action: utter_cancelamento_telefone
+- story: Story from Conversation ID fc438e3559ba4367848a9df700e7c232
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: instrucoes
+  - action: utter_instrucoes
+  - intent: lista_chamados
+  - action: utter_lista_chamados
+  - intent: cancelamento
+  - action: utter_cancelamento
+  - intent: cancelamento_telefone
+  - action: utter_cancelamento_telefone

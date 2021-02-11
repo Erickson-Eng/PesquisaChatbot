@@ -1,0 +1,58 @@
+[
+  {
+    "text": "quero saber sobre os chamados",
+    "intent": "lista_chamados",
+    "intent_prediction": {
+      "name": "chamado",
+      "confidence": 0.31715521216392517
+    }
+  },
+  {
+    "text": "n\u00e3o quero saber",
+    "intent": "nao_capturado",
+    "intent_prediction": {
+      "name": "chamado",
+      "confidence": 0.18454425036907196
+    }
+  },
+  {
+    "text": "at\u00e9 mais",
+    "intent": "adeus",
+    "intent_prediction": {
+      "name": "negacao",
+      "confidence": 0.20757077634334564
+    }
+  },
+  {
+    "text": "cliente quer cancelar",
+    "intent": "cancelamento",
+    "intent_prediction": {
+      "name": "cancelamento_celular",
+      "confidence": 0.26826363801956177
+    }
+  },
+  {
+    "text": "co7",
+    "intent": "cancelamento",
+    "intent_prediction": {
+      "name": "cancelamento_celular",
+      "confidence": 0.17076712846755981
+    }
+  },
+  {
+    "text": "chamados de erros",
+    "intent": "erros_sistemicos",
+    "intent_prediction": {
+      "name": "lista_chamados",
+      "confidence": 0.20148389041423798
+    }
+  },
+  {
+    "text": "quais os chamados para erros?",
+    "intent": "erros_sistemicos",
+    "intent_prediction": {
+      "name": "lista_chamados",
+      "confidence": 0.25146257877349854
+    }
+  }
+]

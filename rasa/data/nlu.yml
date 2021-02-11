@@ -1,92 +1,218 @@
 version: "2.0"
-
 nlu:
-- intent: greet
+- intent: saudacao
   examples: |
-    - hey
+    - oi
+    - ola
+    - e ai
     - hello
     - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
-- intent: goodbye
+    - bom dia
+    - boa tarde
+    - boa noite
+    - E ai
+    - Oi
+- intent: negacao
   examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
+    - não
     - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
+    - negativo
+    - não por enquanto
+    - não, obrigado
+    - não até mais
+    - nao
+- intent: positivo
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
+    - sim
+    - s
+    - com certeza
+    - isso mesmo
+    - isso, claro!
+- intent: instrucoes
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
+    - pode me ajudar?
+    - preciso de ajuda
+    - pode me dar instruções?
+    - pode me ensinar?
+    - preciso de um help
+    - help
+    - instruções
+    - ajuda
+    - quero instruções
+- intent: chamado
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - quero abrir um chamado
+    - preciso abrir um chamado
+    - desejo abrir um chamado
+    - chamado
+    - ocorrencia
+    - quero abrir uma ocorrencia
+    - preciso abrir uma ocorrencia
+    - Quero saber sobre um chamado
+    - preciso saber sobre um chamado
+    - Quero saber sobre os chamados
+    - Quero saber sobre chamados
+- intent: procedimento
+  examples: |
+    - quero fazer um procedimento
+    - preciso fazer um procedimento
+    - procedimento
+    - processo
+    - como faço esse procedimento
+- intent: lista_chamados
+  examples: |
+    - preciso da lista de chamados
+    - quero a lista de chamados
+    - me lista os chamados
+    - lista os chamados
+    - lista de chamados
+    - me faz uma lista de chamados
+    - quais chamados posso abrir?
+    - me lista as ocorrencias
+    - lista as ocorrencias
+    - faz uma lista das ocorrencias
+    - quero ajuda nos chamados
+    - quero ajuda nas ocorrencias
+    - quero saber sobre os chamados
+    - com os chamados
+- intent: lista_procedimentos
+  examples: |
+    - me lista os procedimentos
+    - lista de procedimentos
+    - quero uma lista de procedimentos
+    - preciso da lista de procedimentos
+    - quero ajuda nos procedimentos
+- intent: nao_capturado
+  examples: |
+    - não quero saber
+    - não quero nada disso
+- intent: adeus
+  examples: |
+    - até mais
+    - obrigado e tchau
+    - até logo
+    - flw
+- intent: robo
+  examples: |
+    - estou falando com robo?
+    - to falando com um robo?
+    - você é um bot?
+    - to falando com bot?
+- intent: cadastro
+  examples: |
+    - ca1
+    - quero fazer uma alteração cadastral
+    - quero mudar um negocio do cadastro do cliente
+    - qual chamado abro para trocar o cadastro
+    - Cadastro
+- intent: local_cobrança
+  examples: |
+    - ca1 - mc1
+    - qual chamado para trocar o local de cobrança?
+    - tem chamado para trocar o local de cobrança?
+    - preciso trocar o local de cobrança
+    - quero trocar o local de cobrança
+    - como faz a troca do local de cobrança?
+    - troca de local de cobrança
+    - mudança de local para cobrança
+    - preciso da troca do local para cobrança
+    - quero trocar o endereço de cobrança
+    - como troco o local de cobrança?
+    - como faço pra trocar o local de cobrança?
+- intent: mudança_titularidade
+  examples: |
+    - ca1 - mt1
+    - cliente quer fazer troca de titularidade
+    - troca de titularidade
+    - qual chamado para troca de titularidade?
+    - mudanca de titularidade
+    - como faço a mudança de titularidade?
+- intent: desconhece_assinatura
+  examples: |
+    - ca1 - mt2
+    - cliente diz não ter contrato
+    - cliente informa que não possui contrato
+    - cliente reclama que não tem contrato
+    - cliente reclama que não tem assinatura
+    - cliente desconhece assinatura
+    - reclama ser vitima de fraude
+    - fraude
+    - desconhece assinatura
+    - desconhece titularidade
+- intent: cancelamento
+  examples: |
+    - cliente quer cancelar
+    - cliente solicita cancelamento
+    - cancelamento
+    - cancelar
+    - co7
+    - quero saber sobre cancelamento
+- intent: cancelamento_telefone
+  examples: |
+    - cliente não quer mais o telefone fixo
+    - cliente não quer o fixo
+    - qual chamado de cancelamento do telefone
+    - cancelamento telefone fixo
+    - cancelamento fixo
+    - co7 - tf1
+    - qual chamado para cancelar o fixo
+    - to precisando cancelar o telefone fixo
+    - fixo
+- intent: cancelamento_celular
+  examples: |
+    - cliente não quer mais celular
+    - cliente não quer o celular
+    - cancelamento celular
+    - co7 - tm1
+    - cliente quer cancelamento do celular
+    - como faço para cancelar o celular?
+- intent: cancelamento_internet
+  examples: |
+    - cliente quer cancelamento da internet
+    - cancelamento internet
+    - retirar internet
+    - cliente não quer mais a internet
+    - chamado de cancelamento da internet
+    - qual chamado de cancelamento da internet
+    - co7 - ti1
+    - como faço pra cancelar a internet?
+- intent: erros_sistemicos
+  examples: |
+    - chamados de erros
+    - erros sistemicos
+    - quais os chamados para erros?
+    - er5
+- intent: erro_cadastro
+  examples: |
+    - não consigo cadastrar o que faço?
+    - erro ao mudar cadastro
+    - erro na aba cadastro
+    - er5 - ca1
+    - Erro no cadastro
+- intent: erro_velocidade
+  examples: |
+    - velocidade não liberada na aba cadastro
+    - erro na liberaçao da internet
+    - er5 - in1
+    - erro na velocidade da internet
+    - a internet não tá sendo liberada
+    - erro na liberação da velocidade da internet
+- intent: erro_mud_pacote
+  examples: |
+    - er5 - mp1
+    - erro em mudar pacote
+    - erro na mudança de pacote
+    - não consigo mudar o pacote
+    - Erro em mudança de pacote
+- intent: pacote_indisponivel
+  examples: |
+    - er5 - mp2
+    - pacote indisponivel
+    - pacote fora do sistema
+- intent: MUDANÇA_DE_LOCAL_PARA_COBRANÇA
+  examples: |
+    - Preciso do chamado MUDANÇA DE LOCAL PARA COBRANÇA
+    - Quero abrir o chamado MUDANÇA DE LOCAL PARA COBRANÇA
+    - Preciso abrir o chamado MUDANÇA DE LOCAL PARA COBRANÇA
+    - quero o chamado CA1-MC1
+    - quero a ocorrencia CA1-MC1
