@@ -1,0 +1,9 @@
+FA3 - CF2 - CONTESTAÇÃO DE CHAMADAS
+Motivo da geração: Cliente entra em contato com CRN informando desconhecer ligações presentes em sua fatura.
+Quem gera o chamado: Atendimento ao cliente
+Texto padrão: Cliente [Nome] informa que as ligações [Numeros] não foram realizadas de seu telefone e solicita contestação da fatura.
+Quem soluciona: Atendimento ao cliente
+Tipo de geração: Fechada
+Prazo de tratamento: Imediata
+Resolução:
+-Fechada

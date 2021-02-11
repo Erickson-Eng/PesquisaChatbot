@@ -1,0 +1,11 @@
+CA1 - MT1 - MUDANÇA DE TITULARIDADE
+Motivo da geração: Cliente deseja repassar sua assinatura para outra pessoa.
+Quem gera o chamado: Atendimento ao cliente.
+Texto padrão: Cliente [Nome], solicita repassar a assinatura na cidade [Nome], contrato [numero], para novo assinante [Nome], CPF [Numero], Numero para contato [Numero].
+Quem soluciona: BackOffice
+Tipo de geração: Aberta
+Prazo de tratamento: 24h corridas
+Resolução:
+- Erro de abertura
+- Solicitação atendida
+- Contato não concluido

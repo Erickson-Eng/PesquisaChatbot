@@ -1,0 +1,10 @@
+ER5 - CA1 - ERRO NO CADASTRO
+Motivo da geração: Foi realizado alterações cadastrais no contratos, porém, não foram concluidas devido a erro sistemico.
+Quem gera o chamado: Atendimento ao cliente
+Texto padrão: Foi gerado um erro [Nome do erro] durante a alteração cadastral favor realizar correções e alterações no cadastro do cliente [Alterações].
+Quem soluciona: Backoffice
+Tipo de geração: Aberta
+Prazo de tratamento: 48h corridas
+Resolução:
+- ERRO DE ABERTURA
+- SOLICITAÇÃO ATENDIDA

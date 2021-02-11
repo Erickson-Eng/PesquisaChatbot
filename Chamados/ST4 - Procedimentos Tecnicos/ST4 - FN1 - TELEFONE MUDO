@@ -1,0 +1,12 @@
+ST4 - FN1 - TELEFONE MUDO
+Motivo da geração: Cliente entra em contato e informa que não consegue realizar ligações devido telefone está mudo.
+Quem gera o chamado: Atendimento ao cliente
+Texto padrão: Realizado os procedimentos tecnicos com o cliente [Nome] e não foi possivel realizar a correção necessitando enviar para uma analise externa de estrutura.
+Quem soluciona: Atendiemento técnico
+Tipo de geração: Aberta
+Prazo de tratamento: 24 horas corridas
+Resolução:
+- ERRO DE ABERTURA
+- ENVIADO TÉCNICO
+- PROBLEMA EXTERNO
+- RESOLVIDO

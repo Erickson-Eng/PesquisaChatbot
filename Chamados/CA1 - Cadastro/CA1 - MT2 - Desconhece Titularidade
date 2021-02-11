@@ -1,0 +1,11 @@
+CA1 - MT2 - DESCONHECE TITULARIDADE
+Motivo da geração: Cliente entra em contato com CRN informando que desconhece a assinatura e deseja cancelamento.
+Quem gera o chamado: Atendimento ao cliente
+Texto padrão: Sr(a)[Nome] informa desconhecimento da assinatura de numero [Numero] e deseja analise da situação e cancelamento de todos os valores gerados.
+Quem soluciona: Setor anti-fraudes
+Tipo de geração:Aberta
+Prazo de tratamento:15 dias uteis
+Resolução:
+- ERRO DE ABERTURA
+- RECLAMAÇÃO IMPROCEDENTE
+- RECLAMAÇÃO PROCEDENTE

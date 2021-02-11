@@ -1,0 +1,11 @@
+ER5 - NA1 - ERRO AO MUDAR O PACOTE
+Motivo da geração: Pacote que se encontra disponivel na tabela, porém, não foi disponibilizado no sistema.
+Quem gera o chamado: Atendimento ao cliente
+Texto padrão: Realizado uma venda de pacote [ Informar pacote ], porém, o mesmo não se encontra disponivel para mudança.
+Quem soluciona: Backoffice
+Tipo de geração: Aberta
+Prazo de tratamento: 24h corridas
+Resolução:
+- ERRO DE ABERTURA
+- SOLICITAÇÃO ATENDIDA
+- DESISTENCIA DO CLIENTE

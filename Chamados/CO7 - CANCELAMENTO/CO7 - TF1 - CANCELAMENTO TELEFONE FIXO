@@ -1,0 +1,10 @@
+CO7 - TF1 - CANCELAMENTO TELEFONE FIXO
+Motivo da geração: Titular entra em contato solicitando cancelamento de seu telefone fixo.
+Quem gera o chamado: RETENÇÃO
+Texto padrão: Cliente [Nome] entra em contato solicitando cancelamento de seu telefone fixo, foram realizadas as ofertas [Ofertas].
+Quem soluciona: RETENÇÃO
+Tipo de geração: ABERTA
+Prazo de tratamento: IMEDIATO
+Resolução:
+- CANCELADO
+- RETIDO

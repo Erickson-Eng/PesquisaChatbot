@@ -1,0 +1,11 @@
+ER5 - NA1 - ERRO NA VELOCIDADE DE INTERNET
+Motivo da geração: Cliente possui um pacote cadastrado, porém, não se encontra disponibilizado de forma integral.
+Quem gera o chamado: Atendimento ao cliente
+Texto padrão: cliente possui um pacote [Informar pacote], porém, sua velocidade está incompativel [Informar velocidade] favor realizar correção e liberação.
+Quem soluciona: Backoffice
+Tipo de geração: Aberta
+Prazo de tratamento: 48h corridas
+Resolução:
+- ERRO DE ABERTURA
+- SOLICITAÇÃO ATENDIDA
+- VELOCIDADE INDISPONIVEL

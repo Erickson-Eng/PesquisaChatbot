@@ -1,0 +1,9 @@
+FA3 - IF1 - INFORMAÇÃO SOBRE FATURA
+Motivo da geração: Cliente entra em contato com CRN solicitando informações sobre sua fatura.
+Quem gera o chamado: Atendimento ao cliente
+Texto padrão: Cliente [Nome] solicita detalhamento sobre sua fatura e itens vinculados a mesma.
+Quem soluciona: Atendimento ao cliente
+Tipo de geração: Fechada
+Prazo de tratamento: Imediato
+Resolução:
+- FECHADA

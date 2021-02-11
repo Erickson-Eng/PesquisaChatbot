@@ -1,0 +1,10 @@
+CO7 - TF1 - CANCELAMENTO INTERNET
+Motivo da geração: Titular entra em contato solicitando cancelamento da sua internet.
+Quem gera o chamado: RETENÇÃO
+Texto padrão: Cliente [Nome] entra em contato solicitando cancelamento de sua internet onde foram realizadas as ofertas [Ofertas].
+Quem soluciona: RETENÇÃO
+Tipo de geração: ABERTA
+Prazo de tratamento: IMEDIATO
+Resolução:
+- CANCELADO
+- RETIDO

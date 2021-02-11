@@ -1,0 +1,11 @@
+FA3 - CF3 - CONTESTAÇÃO FORA DA ALÇADA
+Motivo da geração: Cliente entra em contato solicitando contestação de itens que ultrapassa o limite de contestação.
+Quem gera o chamado: Atendimento ao cliente
+Texto padrão: Cliente [Nome] solicita a contestação dos itens [Itens], porém, esses valores ultrapassam a alçada do atendimento necessitando avaliação do setor financeiro.
+Quem soluciona: Setor financeiro
+Tipo de geração: Aberta
+Prazo de tratamento: 48 Horas corridas
+Resolução:
+- ERRO DE ABERTURA
+- SOLICITAÇÃO IMPROCEDENTE
+- SOLICITAÇÃO PROCEDENTE

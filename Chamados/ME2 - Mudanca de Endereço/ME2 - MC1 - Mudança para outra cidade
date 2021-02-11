@@ -1,0 +1,11 @@
+ME2 - MC1 - MUDANÇA PARA OUTRA CIDADE
+Motivo da geração: cliente entra em contato com crn e solicita a mudança de seu contrato para outra cidade.
+Quem gera o chamado: atendimento ao cliente
+Texto padrão: Cliente entra em contato e informa que está se mudando para outra cidade solicitando que seu contrato seja transferido para lá [endereço, numero, bairro, cidade, cep]
+Quem soluciona: Mudança de endereço
+Tipo de geração: Aberta
+Prazo de tratamento: 24 horas corridas
+Resolução:
+- Endereço sem cabeamento
+- Mudança concluida
+- Erro de abertura

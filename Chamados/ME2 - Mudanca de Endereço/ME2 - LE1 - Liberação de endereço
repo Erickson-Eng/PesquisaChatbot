@@ -1,0 +1,11 @@
+ME2 - LE1 - LIBERAÇÃO DE ENDEREÇO
+Motivo da geração: cliente solicita mudança de endereço, porém, endereço se encontra com pendencia de outro contrato ou não se encontra disponivel para instalação do produto solicitado.
+Quem gera o chamado: atendimento ao cliente
+Texto padrão: cliente solicita a liberação do endereço [endereço, numero, bairro, cidade, cep] para instalação do pacote [PACOTE]
+Quem soluciona: Mudança de endereço
+Tipo de geração: Aberta
+Prazo de tratamento: 72 horas corridas
+Resolução:
+- ENDEREÇO SEM CABEAMENTO
+- LIBERAÇÃO CONCLUIDA
+- ERRO DE ABERTURA

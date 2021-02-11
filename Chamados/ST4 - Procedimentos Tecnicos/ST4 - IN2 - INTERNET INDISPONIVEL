@@ -1,0 +1,12 @@
+ST4 - IN2 - INTERNET INDISPONIVEL
+Motivo da geração: Cliente entra em contato informando que sua internet se encontra indisponivel ou com intermitencia.
+Quem gera o chamado: Atendimento ao cliente
+Texto padrão: Cliente [Nome] informa que sua internet se encontra indisponivel ou com intermitencia é realizado todos os testes, porém, não foi possivel normalização.
+Quem soluciona: Atendimento técnico
+Tipo de geração: Aberta
+Prazo de tratamento: 24 horas corridas
+Resolução:
+- ENVIADO PARA ATENDIMENTO INTERNO
+- PROBLEMA EXTERNO DETECTADO
+- PROBLEMA RESOLVIDO
+

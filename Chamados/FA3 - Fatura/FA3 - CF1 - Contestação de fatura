@@ -1,0 +1,9 @@
+FA3 - CF1 - CONTESTAÇÃO DE FATURA
+Motivo da geração: Cliente entra em contato com a crn informando que existe valores indevidos em sua fatura.
+Quem gera o chamado: Atendimento ao cliente
+Texto padrão: Cliente [Nome] alega que valor [Valor] não está de acordo com o contratado, sendo os itens [Celular],[Fixo] e [Internet] ficando no valor total de [Valor].
+Quem soluciona:Atendimento ao cliente
+Tipo de geração: Fechada
+Prazo de tratamento:Imediato
+Resolução:
+- Fechada
